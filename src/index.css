@@ -35,8 +35,36 @@ body {
   font-family: 'Inter', sans-serif;
   font-size: calc(16px + 0.039vw);
   box-sizing: inherit;
-  width: 90%;
   max-width: 1440px;
-  margin: 0 auto;
-  margin-top: 40px;
+  width: 90%;
+  margin: 0 auto !important;
+  padding-top: 40px;
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 600;
+  color: var(--gray-800);
+}
+
+p {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 32px;
+  color: var(--gray-500);
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 1.5rem;
 }

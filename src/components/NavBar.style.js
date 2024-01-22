@@ -9,6 +9,10 @@ export const NavBarContainer = styled.nav`
   align-items: center;
   padding: 16px 32px 16px 32px;
 
+  .navbarLogo {
+    cursor: pointer;
+  }
+
   .navBar-menu {
     display: flex;
     align-items: center;

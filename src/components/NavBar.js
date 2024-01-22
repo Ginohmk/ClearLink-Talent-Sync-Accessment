@@ -8,7 +8,7 @@ const NavBar = () => {
   return (
     <NavBarContainer>
       {/* Logo */}
-      <div aria-label="clear link logo">
+      <div aria-label="clear link logo" className="navbarLogo">
         <img src={LogoImage} alt="Clear Link Logo" />
       </div>
 
