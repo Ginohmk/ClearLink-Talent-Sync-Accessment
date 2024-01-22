@@ -4,19 +4,19 @@ import BackgroundImg from '../../assets/images/background-pattern.svg';
 export const HomeContainer = styled.section``;
 
 export const BannerContainer = styled.section`
+  display: flex;
+  justify-content: space-between;
+  gap: 2.75rem;
+  flex: 1;
   margin-top: 10rem;
   margin-bottom: 6rem;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 44px;
-  flex: 1;
-  flex-wrap: wrap;
 
   .mainBanner__backgroung-img {
     position: absolute;
     top: 0;
     background-image: url(${BackgroundImg});
     background-repeat: no-repeat;
+    max-width: 1440px;
     width: 100%;
     height: 100%;
     z-index: -1;
@@ -26,6 +26,8 @@ export const BannerContainer = styled.section`
     display: flex;
     flex-direction: column;
     gap: 3rem;
+    max-width: 780px;
+    width: 100%;
 
     .mainBanner__leftSection-desc {
       display: flex;
@@ -111,6 +113,9 @@ export const MainContainer = styled.main`
     flex-direction: column;
     gap: 5rem;
     padding: 6rem 0;
+    max-width: 1440px;
+    width: 90%;
+    margin: 0 auto;
 
     &__heading {
       display: flex;
@@ -169,63 +174,212 @@ export const MainContainer = styled.main`
   }
 
   .main-testimonies {
+    background-color: var(--gray-50);
+    padding: 6rem 0;
+
+    &__container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 4rem;
+
+      &-content {
+        &__desc {
+          display: flex;
+          flex-direction: column;
+          gap: 3rem;
+          max-width: 640px;
+
+          &-shopifyImg {
+            width: 112.79px;
+            height: 32px;
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+
+          h3 {
+            font-size: 2.55rem;
+            line-height: 60px;
+          }
+
+          &-userContents {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            &__item {
+              display: flex;
+              align-items: center;
+              gap: 6px;
+
+              h4 {
+                font-size: 1.25rem;
+              }
+
+              p {
+                font-size: 1.125rem;
+              }
+            }
+
+            &__arrows {
+              display: flex;
+              align-items: color-interpolation-filters;
+              gap: 2rem;
+
+              svg {
+                color: var(--blue-700);
+                font-size: 1.9rem;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .main-FAQ {
     display: flex;
-    align-items: center;
+
     justify-content: space-between;
     gap: 4rem;
     padding: 6rem 0;
 
-    &-content {
-      &__desc {
+    &__supportSection {
+      max-width: 547px;
+      width: 100%;
+
+      display: flex;
+      flex-direction: column;
+      gap: 1.24rem;
+
+      p {
+        font-size: 1.4rem;
+
+        button {
+          border: none;
+          background-color: transparent;
+          text-decoration: underline;
+          font-size: 1.4rem;
+          color: var(--gray-500);
+          cursor: pointer;
+        }
+      }
+
+      &-heading {
         display: flex;
         flex-direction: column;
-        gap: 3rem;
-        max-width: 640px;
+        gap: 0.75rem;
 
-        &-shopifyImg {
-          width: 112.79px;
-          height: 32px;
-          img {
-            width: 100%;
-            height: 100%;
-          }
+        h4 {
+          color: var(--blue-700);
+          font-size: 1.125rem;
+        }
+      }
+    }
+
+    &__faqs {
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+      max-width: 701px;
+
+      &-heading,
+      &-headingOpen {
+        display: flex;
+        align-items: center;
+        gap: 1.35rem;
+        justify-content: space-between;
+        cursor: pointer;
+        padding: 2rem;
+        h4 {
+          font-size: 1.22rem;
         }
 
-        h3 {
-          font-size: 2.55rem;
-          line-height: 60px;
+        svg {
+          color: var(--gray-400);
+          font-size: 1.5rem;
+        }
+      }
+
+      hr {
+        border-radius: 16px;
+        height: 1px;
+        max-width: 765px;
+
+        border: 1px solid var(--gray-200);
+        background-color: var(--gray-200);
+      }
+
+      &-open {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+        border-radius: 16px;
+
+        padding: 2rem;
+
+        border: 2px solid var(--gray-200);
+        background-color: var(--gray-50);
+
+        .main-FAQ__faqs-headingOpen {
+          padding: 0;
         }
 
-        &-userContents {
+        p {
+          font-size: 1.125rem;
+        }
+      }
+    }
+  }
+
+  .main-communication {
+    position: relative;
+
+    .main-communication__container {
+      display: flex;
+      justify-content: space-between;
+      gap: 5rem;
+      padding: 6rem 0;
+
+      &-leftSection {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        max-width: 599px;
+
+        &__list {
           display: flex;
-          align-items: center;
-          justify-content: space-between;
-          &__item {
+          flex-direction: column;
+          justify-content: flex-end;
+          gap: 1.23rem;
+
+          li {
             display: flex;
-            align-items: center;
-            gap: 6px;
+            gap: 4px;
+            text-decoration: none;
+            list-style: none;
 
-            h4 {
-              font-size: 1.25rem;
-            }
-
-            p {
-              font-size: 1.125rem;
-            }
-          }
-
-          &__arrows {
-            display: flex;
-            align-items: color-interpolation-filters;
-            gap: 2rem;
-
-            svg {
-              color: var(--blue-700);
-              font-size: 1.9rem;
-              cursor: pointer;
+            img {
+              width: 30px;
+              height: 30px;
             }
           }
         }
+
+        &__btn {
+          display: flex;
+          gap: 8px;
+          align-items: center;
+        }
+      }
+
+      &-rightSection {
+        position: absolute;
+        right: 0;
+        top: 0;
       }
     }
   }

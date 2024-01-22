@@ -67,3 +67,74 @@ export const whyLectieRowTwoOptions = [
       'Your privacy is our priority with bank-grade security protocols safeguarding your meetings and data from unwanted intruders.',
   },
 ];
+
+export const FAQs = [
+  {
+    id: 1,
+    isOpen: true,
+    title: 'How many participants can join a ClearLink video conference?',
+    descrip:
+      'ClearLink offers flexible meeting options. Depending on your subscription plan, you can host meetings with varying numbers of participants. Our plans are designed to accommodate small team collaborations and large-scale webinars, ensuring you have the right fit for your needs.',
+  },
+
+  {
+    id: 2,
+    isOpen: false,
+    title: 'Can I use ClearLink on multiple devices?',
+    descrip:
+      'ed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.',
+  },
+
+  {
+    id: 3,
+    isOpen: false,
+    title: 'Is ClearLink compatible with other video conferencing platforms?',
+    descrip:
+      'ed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt.',
+  },
+
+  {
+    id: 4,
+    isOpen: false,
+    title: 'How does ClearLink ensure the security of my video conferences?',
+    descrip:
+      'ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.',
+  },
+
+  {
+    id: 5,
+    isOpen: false,
+    title: 'Do I need to download any software to use ClearLink?',
+    descrip:
+      'perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dict.',
+  },
+
+  {
+    id: 6,
+    isOpen: false,
+    title: 'What kind of customer support does ClearLink provide?',
+    descrip:
+      'perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dict.',
+  },
+];
+
+export const communication = [
+  {
+    id: 1,
+    text: '30 days free trial',
+  },
+
+  {
+    id: 2,
+    text: 'Cancel at any time',
+  },
+
+  {
+    id: 3,
+    text: 'Access to all features',
+  },
+  {
+    id: 4,
+    text: 'Peronalized onboarding',
+  },
+];

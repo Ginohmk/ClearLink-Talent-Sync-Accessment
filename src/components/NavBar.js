@@ -6,7 +6,7 @@ import LogoImage from '../assets/images/logo.svg';
 
 const NavBar = () => {
   return (
-    <NavBarContainer>
+    <NavBarContainer className="autoAlign">
       {/* Logo */}
       <div aria-label="clear link logo" className="navbarLogo">
         <img src={LogoImage} alt="Clear Link Logo" />

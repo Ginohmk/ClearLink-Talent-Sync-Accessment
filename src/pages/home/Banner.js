@@ -8,7 +8,7 @@ import ReviewStars from '../../assets/images/review-stars.svg';
 
 const Banner = () => {
   return (
-    <BannerContainer className="mainBanner">
+    <BannerContainer className="mainBanner autoAlign">
       <div className="mainBanner__backgroung-img"></div>
 
       <section className="mainBanner__leftSection">
