@@ -203,10 +203,17 @@ export const MainContainer = styled.main`
       }
 
       &-avatar {
+        position: relative;
+
         &__arrow {
           position: absolute;
-          top: 7.8rem;
-          right: 12.5rem;
+          top: -11.5rem;
+          right: 13.5rem;
+          width: 238.23px;
+
+          img {
+            width: 100%;
+          }
         }
       }
     }
@@ -466,6 +473,10 @@ export const MainContainer = styled.main`
           width: 100%;
           display: flex;
           justify-content: center;
+
+          &__arrow {
+            display: none;
+          }
 
           &__groupImg {
             max-width: 789px;

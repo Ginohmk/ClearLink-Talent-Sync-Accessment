@@ -116,11 +116,9 @@ const Main = () => {
           </div>
 
           <div className="main-whyClearLink__options-avatar">
-            {/* <img
-              src={ArrowDrawn}
-              alt="Arrow drawn"
-              className="main-whyClearLink__options-avatar__arrow"
-            /> */}
+            <div className="main-whyClearLink__options-avatar__arrow">
+              <img src={ArrowDrawn} alt="Arrow drawn" />
+            </div>
 
             <div className="main-whyClearLink__options-avatar__groupImg">
               <img src={OptionsAvatar} alt="Options avatar" />
