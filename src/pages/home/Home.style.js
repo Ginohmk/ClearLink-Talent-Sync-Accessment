@@ -79,6 +79,8 @@ export const BannerContainer = styled.section`
   .mainBanner__rightSection {
     img {
       image-rendering: crisp-edges;
+      width: 100%;
+      height: 100%;
     }
   }
 `;
@@ -116,6 +118,7 @@ export const MainContainer = styled.main`
     max-width: 1440px;
     width: 90%;
     margin: 0 auto;
+    position: relative;
 
     &__heading {
       display: flex;
@@ -168,6 +171,14 @@ export const MainContainer = styled.main`
               height: 65px;
             }
           }
+        }
+      }
+
+      &-avatar {
+        &__arrow {
+          position: absolute;
+          top: 7.8rem;
+          right: 12.5rem;
         }
       }
     }

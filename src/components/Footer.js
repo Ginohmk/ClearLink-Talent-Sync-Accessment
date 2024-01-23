@@ -1,9 +1,14 @@
 import React from 'react';
 import { FooterContauner } from './Footer.style';
 import Logo from '../assets/images/logo.svg';
-import { FooterDataList } from './Util';
+import { FooterDataList, footerSocialIcons } from './Util';
+import AndroidDownload from '../assets/images/android-download.svg';
+import AppleDownload from '../assets/images/apple-download.svg';
+import { useNavigate } from 'react-router-dom';
 
 const Footer = () => {
+  const navigate = useNavigate();
+
   return (
     <FooterContauner>
       <section className="footerMain autoAlign">
@@ -24,17 +29,41 @@ const Footer = () => {
 
               <ul>
                 {list.map((item) => (
-                  <li>{item}</li>
+                  <li onClick={() => navigate('/')}>{item}</li>
                 ))}
               </ul>
             </div>
           ))}
 
-          <div>
+          <div className="footerMain-list__getApp">
             <h3>Get the app</h3>
 
-            <div></div>
+            <div className="footerMain-list__getApp-btn">
+              <a href="#none" target="_blank">
+                <img src={AndroidDownload} alt="Android download " />
+              </a>
+
+              <a href="#none" target="_blank">
+                <img src={AppleDownload} alt="apple Download" />
+              </a>
+            </div>
           </div>
+        </div>
+      </section>
+
+      <section className="footerSocials-container">
+        <div className="footerSocials-container__contents autoAlign">
+          <p>© 2023 ClearLink. All rights reserved.</p>
+
+          <ul>
+            {footerSocialIcons.map(({ id, name, image, link }) => (
+              <a href={link} key={id}>
+                <li>
+                  <img src={image} alt={name} />
+                </li>
+              </a>
+            ))}
+          </ul>
         </div>
       </section>
     </FooterContauner>

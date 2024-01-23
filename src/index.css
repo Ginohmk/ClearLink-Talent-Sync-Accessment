@@ -4,6 +4,7 @@
 /* ---- Global Veriable */
 
 :root {
+  --blue-dark: #004eeb;
   --blue-700: #175cd3;
   --gray-900: #101828;
   --gray-800: #1d2939;
@@ -70,7 +71,7 @@ h3 {
 }
 
 .autoAlign {
-  max-width: 1540px;
+  max-width: 1440px;
   width: 90%;
   margin: 0 auto;
 }

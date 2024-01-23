@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react';
+import React, { useState } from 'react';
 import { MainContainer } from './Home.style';
 import {
   FAQs,
@@ -10,11 +10,12 @@ import {
 import { HiOutlineArrowSmLeft, HiOutlineArrowSmRight } from 'react-icons/hi';
 import { FiMinusCircle, FiPlusCircle } from 'react-icons/fi';
 
-import OptionsAvatar from '../../assets/images/options-avatar.svg';
+import OptionsAvatar from '../../assets/images/options-avatar.png';
 import Shopify from '../../assets/images/shopify.svg';
 import StarRating from '../../assets/images/stars.svg';
 import Useravatar from '../../assets/images/user-avatar.svg';
-import TestimonyAvatar from '../../assets/images/testimony-avatar.svg';
+import TestimonyAvatar from '../../assets/images/testimony-avatar.png';
+import ArrowDrawn from '../../assets/images/arrow-drawn.png';
 import { useNavigate } from 'react-router-dom';
 
 import Button from '../../components/Button';
@@ -114,7 +115,12 @@ const Main = () => {
             </div>
           </div>
 
-          <div className="main-whyClearLink__options__avatar">
+          <div className="main-whyClearLink__options-avatar">
+            <img
+              src={ArrowDrawn}
+              alt="Arrow drawn"
+              className="main-whyClearLink__options-avatar__arrow"
+            />
             <img src={OptionsAvatar} alt="Options avatar" />
           </div>
         </div>

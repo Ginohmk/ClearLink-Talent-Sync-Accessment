@@ -1,9 +1,9 @@
 import React from 'react';
 import { BannerContainer } from './Home.style';
 import Button from '../../components/Button';
-import Menuavater from '../../assets/images/main-banner-avater.svg';
+import Menuavater from '../../assets/images/main-banner-avater.png';
 import RobotIcon from '../../assets/images/robot-icon.svg';
-import ReviewGroupAvater from '../../assets/images/review-group-avater.svg';
+import ReviewGroupAvater from '../../assets/images/review-group-avater.png';
 import ReviewStars from '../../assets/images/review-stars.svg';
 
 const Banner = () => {
