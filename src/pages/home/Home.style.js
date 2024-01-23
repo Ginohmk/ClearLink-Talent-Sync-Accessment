@@ -441,19 +441,23 @@ export const MainContainer = styled.main`
       }
 
       &-rightSection {
-        border: 8px solid var(--gray-900);
+        border-top: 8px solid var(--gray-900);
+        border-bottom: 8px solid var(--gray-900);
+        border-left: 8px solid var(--gray-900);
         border-radius: 12px;
         position: absolute;
-        right: 0;
+        right: 0px;
         top: 0;
       }
     }
   }
 
-  @media screen and (max-width: 1495px) {
+  @media screen and (max-width: 1483px) {
     .main-communication {
       &__container {
         &-rightSection {
+          border: 8px solid var(--gray-900);
+
           position: relative;
           max-width: 1024px;
           img {

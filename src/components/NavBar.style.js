@@ -54,7 +54,9 @@ export const NavBarContainer = styled.nav`
     border: ${({ ismenu }) =>
       ismenu === true ? `none` : '1px solid var(--gray-300)'};
 
-    overflow-y: ${({ ismenu }) => (ismenu === true ? `audo` : 'hidden')};
+    overflow-y: ${({ ismenu }) => (ismenu === true ? `auto` : 'hidden')};
+
+    height: ${({ ismenu }) => (ismenu === true ? `100dvh` : '')};
 
     top: 0;
     bottom: 0;
