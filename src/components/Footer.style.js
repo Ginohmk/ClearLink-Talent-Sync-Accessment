@@ -84,7 +84,10 @@ export const FooterContauner = styled.footer`
 
     &__contents {
       display: flex;
+      gap: 2.3rem;
       justify-content: space-between;
+      flex: 1;
+      flex-wrap: wrap;
 
       p {
         font-size: 1rem;
@@ -98,6 +101,25 @@ export const FooterContauner = styled.footer`
         li {
           list-style: none;
         }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1275px) {
+    .footerMain {
+      flex-direction: column;
+      gap: 4rem;
+
+      &-container {
+        max-width: 940px;
+        width: 100%;
+      }
+
+      &-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
+        column-gap: 1rem;
+        row-gap: 3rem;
       }
     }
   }

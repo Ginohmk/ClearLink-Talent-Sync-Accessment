@@ -116,17 +116,19 @@ const Main = () => {
           </div>
 
           <div className="main-whyClearLink__options-avatar">
-            <img
-              src={ArrowDrawn}
-              alt="Arrow drawn"
-              className="main-whyClearLink__options-avatar__arrow"
-            />
-            <img src={OptionsAvatar} alt="Options avatar" />
+            <div className="main-whyClearLink__options-avatar__arrow">
+              <img src={ArrowDrawn} alt="Arrow drawn" />
+            </div>
+
+            <div className="main-whyClearLink__options-avatar__groupImg">
+              <img src={OptionsAvatar} alt="Options avatar" />
+            </div>
           </div>
         </div>
       </section>
 
       {/* Testimony */}
+
       <section className="main-testimonies">
         <div className="main-testimonies__container autoAlign ">
           <div className="main-testimonies__container-content">
@@ -157,14 +159,18 @@ const Main = () => {
                 </div>
 
                 <div className="main-testimonies__container-content__desc-userContents__arrows">
-                  <HiOutlineArrowSmLeft />
+                  <div className="main-testimonies__container-content__desc-userContents__arrows-container">
+                    <HiOutlineArrowSmLeft />
+                  </div>
 
-                  <HiOutlineArrowSmRight />
+                  <div className="main-testimonies__container-content__desc-userContents__arrows-container">
+                    <HiOutlineArrowSmRight />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div>
+          <div className="main-testimonies__container-testimonyAvatar">
             <img src={TestimonyAvatar} alt="Testimony avatar" />
           </div>
         </div>
