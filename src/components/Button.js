@@ -7,7 +7,7 @@ const Button = ({ text, borderColor, bgColor, textColor, func = () => {} }) => {
       borderColor={borderColor}
       bgColor={bgColor}
       textColor={textColor}
-      onClick={func()}
+      onClick={() => func()}
     >
       {text}
     </ButtonContainer>
