@@ -56,7 +56,7 @@ export const NavBarContainer = styled.nav`
 
     overflow-y: ${({ ismenu }) => (ismenu === true ? `auto` : 'hidden')};
 
-    height: ${({ ismenu }) => (ismenu === true ? `100dvh` : '')};
+    height: ${({ ismenu }) => (ismenu === true ? `100vh` : '')};
 
     top: 0;
     bottom: 0;
