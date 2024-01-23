@@ -17,8 +17,9 @@ export const BannerContainer = styled.section`
     background-image: url(${BackgroundImg});
     background-repeat: no-repeat;
     max-width: 1440px;
-    width: 100%;
+    width: 90%;
     height: 100%;
+    margin: 0 auto;
     z-index: -1;
   }
 
@@ -29,18 +30,18 @@ export const BannerContainer = styled.section`
     max-width: 780px;
     width: 100%;
 
-    .mainBanner__leftSection-desc {
+    &-desc {
       display: flex;
       flex-direction: column;
       gap: 1.5rem;
     }
 
-    .mainBanner__leftSection-actionBtn {
+    &-actionBtn {
       display: flex;
       align-items: center;
       gap: 1.25rem;
 
-      .mainBanner__leftSection-actionBtn__desc {
+      &__desc {
         display: flex;
         align-items: flex-end;
 
@@ -83,6 +84,32 @@ export const BannerContainer = styled.section`
       height: 100%;
     }
   }
+
+  @media screen and (max-width: 1275px) {
+    flex-direction: column;
+
+    .mainBanner__leftSection {
+      align-items: center;
+      max-width: 100%;
+
+      &-desc {
+        text-align: center;
+      }
+    }
+  }
+
+  @media screen and (max-width: 475px) {
+    .mainBanner__leftSection {
+      &-actionBtn {
+        flex-direction: column-reverse;
+        width: 100%;
+
+        button {
+          width: 90%;
+        }
+      }
+    }
+  }
 `;
 
 export const MainContainer = styled.main`
@@ -102,11 +129,11 @@ export const MainContainer = styled.main`
     &__images {
       display: flex;
       align-items: center;
-
-      justify-content: space-between;
+      justify-content: center;
       gap: 4.3125rem;
       flex: 1;
       flex-wrap: wrap;
+      width: 100%;
     }
   }
 
@@ -150,6 +177,7 @@ export const MainContainer = styled.main`
       &-content {
         display: flex;
         flex: 1;
+
         gap: 2.5rem;
 
         &__items {
@@ -192,6 +220,7 @@ export const MainContainer = styled.main`
       display: flex;
       align-items: center;
       justify-content: space-between;
+
       gap: 4rem;
 
       &-content {
@@ -211,7 +240,7 @@ export const MainContainer = styled.main`
           }
 
           h3 {
-            font-size: 2.55rem;
+            font-size: clamp(1.75rem, 2.5vw, 2.55rem);
             line-height: 60px;
           }
 
@@ -235,16 +264,34 @@ export const MainContainer = styled.main`
 
             &__arrows {
               display: flex;
-              align-items: color-interpolation-filters;
+              align-items: center;
               gap: 2rem;
 
-              svg {
-                color: var(--blue-700);
-                font-size: 1.9rem;
+              &-container {
+                width: 56px;
+                height: 56px;
+                border-radius: 28px;
+                border: 1px solid var(--blue-100);
+                background-color: var(--base-white);
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 cursor: pointer;
+
+                svg {
+                  color: var(--blue-700);
+                  font-size: 1.9rem;
+                }
               }
             }
           }
+        }
+      }
+
+      &-testimonyAvatar {
+        max-width: 640px;
+        img {
+          width: 100%;
         }
       }
     }
@@ -348,7 +395,7 @@ export const MainContainer = styled.main`
   .main-communication {
     position: relative;
 
-    .main-communication__container {
+    &__container {
       display: flex;
       justify-content: space-between;
       gap: 5rem;
@@ -358,14 +405,13 @@ export const MainContainer = styled.main`
         display: flex;
         flex-direction: column;
         gap: 2rem;
-
         max-width: 599px;
 
         &__list {
           display: flex;
           flex-direction: column;
           justify-content: flex-end;
-          gap: 1.23rem;
+          gap: 1.43rem;
 
           li {
             display: flex;
@@ -388,9 +434,161 @@ export const MainContainer = styled.main`
       }
 
       &-rightSection {
+        border: 8px solid var(--gray-900);
+        border-radius: 12px;
         position: absolute;
         right: 0;
         top: 0;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1495px) {
+    .main-communication {
+      &__container {
+        &-rightSection {
+          position: relative;
+          max-width: 1024px;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1275px) {
+    .main-whyClearLink {
+      &__options {
+        flex-direction: column;
+
+        &-avatar {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+
+          &__groupImg {
+            max-width: 789px;
+            overflow-y: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+
+    .main-testimonies {
+      &__container {
+        flex-direction: column;
+        gap: 8rem;
+
+        &-content {
+          width: 100%;
+          &__desc {
+            max-width: 940px;
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .main-FAQ {
+      flex-direction: column;
+
+      &__supportSection {
+        max-width: 940px;
+        width: 100%;
+      }
+
+      &__faqs {
+        max-width: 100%;
+      }
+    }
+
+    .main-communication {
+      &__container {
+        flex-direction: column;
+
+        &-leftSection {
+          max-width: 940px;
+          width: 100%;
+          &__btn {
+            gap: 1rem;
+          }
+        }
+
+        &-rightSection {
+          max-width: 940px;
+          width: 100%;
+          align-self: center;
+
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 645px) {
+    .main-socialProofs {
+      &__headText {
+        text-align: center;
+      }
+    }
+    .main-whyClearLink {
+      &__options {
+        flex-direction: column;
+        &-content {
+          flex-direction: column;
+        }
+      }
+    }
+
+    .main-testimonies {
+      &__container {
+        flex-direction: column;
+        gap: 8rem;
+
+        &-content {
+          width: 100%;
+          &__desc {
+            &-userContents {
+              flex-direction: column;
+              gap: 2rem;
+
+              &__arrows {
+                gap: 4.5rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 475px) {
+    .main-communication {
+      &__container {
+        flex-direction: column;
+
+        &-leftSection {
+          max-width: 940px;
+          width: 100%;
+          &__btn {
+            flex-direction: column;
+            gap: 1.5;
+
+            button {
+              width: 90%;
+            }
+          }
+        }
       }
     }
   }

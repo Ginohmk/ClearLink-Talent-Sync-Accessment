@@ -4,6 +4,7 @@
 /* ---- Global Veriable */
 
 :root {
+  --blue-100: #d1e9ff;
   --blue-dark: #004eeb;
   --blue-700: #175cd3;
   --gray-900: #101828;
@@ -53,21 +54,21 @@ h4 {
 
 p {
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 4.5vw, 1.5rem);
   line-height: 32px;
   color: var(--gray-500);
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: clamp(2.5rem, 2.5vw, 4rem);
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: clamp(2rem, 2.5vw, 3rem);
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
 }
 
 .autoAlign {
