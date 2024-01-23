@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ffff7d2c.css",
+    "main.js": "/static/js/main.5f250e73.js",
+    "static/media/screen-time.svg": "/static/media/screen-time.13b99219decf33eabd797fb146262c33.svg",
+    "static/media/main-banner-avater.png": "/static/media/main-banner-avater.5b410e0f40b64c81e94c.png",
+    "static/media/user-avatar.svg": "/static/media/user-avatar.f9d822b350b42eedfcd6de381febf301.svg",
+    "static/media/options-avatar.png": "/static/media/options-avatar.b0b2e21931a89461ed56.png",
+    "static/media/testimony-avatar.png": "/static/media/testimony-avatar.425bc5f5230f496fc96b.png",
+    "static/media/background-pattern.svg": "/static/media/background-pattern.4be57f74691e79f59316b87d5a1a5eb5.svg",
+    "static/media/review-group-avater.png": "/static/media/review-group-avater.e72eabe9a9fe93c84a6b.png",
+    "static/media/android-download.svg": "/static/media/android-download.fcae6f2b8b93688a296eb1641dd4bbd1.svg",
+    "static/media/review-stars.svg": "/static/media/review-stars.a6366b2c3064c654eadf035cd9548baf.svg",
+    "static/media/apple-download.svg": "/static/media/apple-download.0ca1cc9bad18f7196b695abb7fc151c4.svg",
+    "static/media/stars.svg": "/static/media/stars.a1b32e2aaef04f47ab3ab55850a56cad.svg",
+    "static/media/logo.svg": "/static/media/logo.79e75fa3038cb57e790ddbac3613d126.svg",
+    "static/media/shopify.svg": "/static/media/shopify.bb5ebfded22561e56c3d1652fe9c1997.svg",
+    "static/media/robot-icon.svg": "/static/media/robot-icon.a979c1c7d24816a8a27d5919d9df8a5a.svg",
+    "static/media/coinbase.svg": "/static/media/coinbase.9d26345c21f17881173c6639e638f557.svg",
+    "static/media/automatic.svg": "/static/media/automatic.223aec9770dcec8e600ccd2162e09948.svg",
+    "static/media/dropbox.svg": "/static/media/dropbox.5bbd118bad38fcb81be61d66bb9a68da.svg",
+    "static/media/instagram-icon.svg": "/static/media/instagram-icon.b0da7ffeca031dc37701673141cababe.svg",
+    "static/media/marvel.svg": "/static/media/marvel.16a24a48ec13c432160758c680dd83b3.svg",
+    "static/media/github-icon.svg": "/static/media/github-icon.b0ec34965cd2e19aad81d08a4397550a.svg",
+    "static/media/twitter-icon.svg": "/static/media/twitter-icon.8869ce767e1b853cedd1aa2c5bc249b3.svg",
+    "static/media/video-icon.svg": "/static/media/video-icon.ea4b77457e0114ee063cb0ba0685fa87.svg",
+    "static/media/youtube-icon.svg": "/static/media/youtube-icon.9c39aff24af7cc2eda4bc491bde91a72.svg",
+    "static/media/calendar-icon.svg": "/static/media/calendar-icon.d4eb537b31a64d25b0ee665115d7ea66.svg",
+    "static/media/linkedin-icon.svg": "/static/media/linkedin-icon.b076fc4e1ec5d5a905b344d46267b418.svg",
+    "index.html": "/index.html",
+    "static/media/check-icon.svg": "/static/media/check-icon.5132ff0ba0d6764c39c593af577acc32.svg",
+    "static/media/security-icon.svg": "/static/media/security-icon.85c15338abe6a583b8fe0a0e9d2c1d7d.svg",
+    "static/media/facebook-icon.svg": "/static/media/facebook-icon.1f9e5ce48b7397b2810b5fc9a06ef64e.svg",
+    "static/media/voice-icon.svg": "/static/media/voice-icon.67bfb51a56a612adb170d12e1dfcedb4.svg",
+    "main.ffff7d2c.css.map": "/static/css/main.ffff7d2c.css.map",
+    "main.5f250e73.js.map": "/static/js/main.5f250e73.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ffff7d2c.css",
+    "static/js/main.5f250e73.js"
+  ]
+}
