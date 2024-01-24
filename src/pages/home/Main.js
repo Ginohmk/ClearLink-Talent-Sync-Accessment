@@ -230,7 +230,7 @@ const Main = () => {
       {/* Perfect communication */}
 
       <section className="main-communication">
-        <div className="main-communication__container autoAlign">
+        <div className="main-communication__container">
           <div className="main-communication__container-leftSection">
             <h2>Ready to clear the path to perfect communication?</h2>
 
