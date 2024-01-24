@@ -412,7 +412,7 @@ export const MainContainer = styled.main`
       justify-content: space-between;
 
       gap: 5rem;
-      width: 93%;
+      width: 93vw;
 
       &-leftSection {
         display: flex;
@@ -525,6 +525,7 @@ export const MainContainer = styled.main`
 
         /* autoAlign */
         width: 90%;
+        max-width: 1440px;
         margin: 0 auto;
 
         &-leftSection {
@@ -597,6 +598,21 @@ export const MainContainer = styled.main`
               width: 90%;
             }
           }
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 1655px) {
+    .main-communication {
+      &__container {
+        /* autoAlign */
+        width: 90%;
+        max-width: 1440px;
+        margin: 0 auto;
+
+        &-rightSection {
+          border: 8px solid var(--gray-900);
         }
       }
     }
