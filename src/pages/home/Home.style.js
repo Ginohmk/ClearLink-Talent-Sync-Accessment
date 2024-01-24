@@ -141,7 +141,7 @@ export const MainContainer = styled.main`
     display: flex;
     flex-direction: column;
     gap: 5rem;
-    padding: 6rem 0;
+    padding: 6rem 0 4rem 0;
     max-width: 1440px;
     width: 90%;
     margin: 0 auto;
@@ -221,7 +221,7 @@ export const MainContainer = styled.main`
 
   .main-testimonies {
     background-color: var(--gray-50);
-    padding: 6rem 0;
+    padding: 6rem 0 4rem 0;
 
     &__container {
       display: flex;
@@ -309,7 +309,8 @@ export const MainContainer = styled.main`
 
     justify-content: space-between;
     gap: 4rem;
-    padding: 6rem 0;
+
+    padding: 6rem 0 4rem 0;
 
     &__supportSection {
       max-width: 547px;
@@ -402,15 +403,21 @@ export const MainContainer = styled.main`
   .main-communication {
     position: relative;
 
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
     &__container {
       display: flex;
       justify-content: space-between;
+
       gap: 5rem;
-      padding: 6rem 0;
+      width: 95vw;
 
       &-leftSection {
         display: flex;
         flex-direction: column;
+
         gap: 2rem;
         max-width: 599px;
 
@@ -445,24 +452,11 @@ export const MainContainer = styled.main`
         border-bottom: 8px solid var(--gray-900);
         border-left: 8px solid var(--gray-900);
         border-radius: 12px;
-        position: absolute;
-        right: 0px;
-        top: 0;
-      }
-    }
-  }
+        max-width: 940px;
+        width: 100%;
 
-  @media screen and (max-width: 1483px) {
-    .main-communication {
-      &__container {
-        &-rightSection {
-          border: 8px solid var(--gray-900);
-
-          position: relative;
-          max-width: 1024px;
-          img {
-            width: 100%;
-          }
+        img {
+          width: 100%;
         }
       }
     }
@@ -529,6 +523,11 @@ export const MainContainer = styled.main`
       &__container {
         flex-direction: column;
 
+        /* autoAlign */
+        width: 90%;
+        max-width: 1440px;
+        margin: 0 auto;
+
         &-leftSection {
           max-width: 940px;
           width: 100%;
@@ -538,13 +537,9 @@ export const MainContainer = styled.main`
         }
 
         &-rightSection {
-          max-width: 940px;
-          width: 100%;
-          align-self: center;
+          border: 8px solid var(--gray-900);
 
-          img {
-            width: 100%;
-          }
+          align-self: center;
         }
       }
     }
@@ -603,6 +598,21 @@ export const MainContainer = styled.main`
               width: 90%;
             }
           }
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 1655px) {
+    .main-communication {
+      &__container {
+        /* autoAlign */
+        width: 90%;
+        max-width: 1440px;
+        margin: 0 auto;
+
+        &-rightSection {
+          border: 8px solid var(--gray-900);
         }
       }
     }
