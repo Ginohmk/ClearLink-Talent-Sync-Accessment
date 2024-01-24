@@ -412,7 +412,7 @@ export const MainContainer = styled.main`
       justify-content: space-between;
 
       gap: 5rem;
-      width: 93vw;
+      width: 95vw;
 
       &-leftSection {
         display: flex;
